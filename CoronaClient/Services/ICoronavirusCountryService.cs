@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace CoronaClient.Services
 {
-    interface ICoronavirusCountryService
+    public interface ICoronavirusCountryService
     {
-        Task<IEnumerable<CoronavirusCountry>> GetTopCases(int amountOfCountries);
+        public Task<IEnumerable<CoronavirusCountry>> GetTopCases(int amountOfCountries);
     }
 }
